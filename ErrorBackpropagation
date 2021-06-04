@@ -6,6 +6,8 @@ hidden_data = []
 
 output_data = []
 
+target_data = np.array([0.01,0.09])
+
 def sigmoid(x):
     return 1/(1+np.exp(-x))
 
