@@ -1,0 +1,17 @@
+import numpy as np
+
+input_data = np.array([0.05, 0.1])
+
+hidden_data = []
+
+output_data = []
+
+def sigmoid(x):
+    return 1/(1+np.exp(-x))
+
+W_itoh = np.array([[0.15,0.25],[0.2,0.3]])
+W_htoo = np.array([[0.35,0.45],[0.4,0.5]])
+
+hidden_data = sigmoid(W_itoh.T @ input_data)
+
+output_data = sigmoid(W_htoo.T @ hidden_data)
